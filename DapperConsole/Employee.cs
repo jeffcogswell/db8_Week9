@@ -10,6 +10,8 @@ namespace DapperConsole
 	[Table("employee")]
 	public class Employee
 	{
+		// We use [Key] if there's an autoincrement primary key
+		// Otherwise we use [ExplicitKey]
 		[Key]
 		public int id { get; set; }
 		public string firstname { get; set; }
