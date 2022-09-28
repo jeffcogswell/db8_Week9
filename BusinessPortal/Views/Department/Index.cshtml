@@ -15,9 +15,9 @@
     <tbody>
         @foreach (Department dep in Model) {
             <tr>
-                <td>@dep.name</td>
+                <td><a href="/Department/Detail?id=@dep.id">@dep.name</a></td>
                 <td>
-                    <a href="/Department/Detail?id=@dep.id">Detail</a>
+                    <!-- <a href="/Department/Detail?id=@dep.id">Detail</a> -->
                     <a href="/Department/Delete?id=@dep.id">Delete</a>
                     <a href="">Edit</a>
                 </td>
